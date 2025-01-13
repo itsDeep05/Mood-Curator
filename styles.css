@@ -1,0 +1,116 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #5f40bd, rgb(78, 155, 213),lightblue);
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background:linear-gradient(to right,  #d63535,white,#c659ab );
+    color: rgba(40, 217, 233, 0.929);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .mood-selector {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .mood-selector button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+    font-size: 16px;
+  }
+  
+  .mood-selector button:hover {
+    background: #f0f0f0;
+    transform: scale(1.1);
+  }
+  
+  #content {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #B1F0F7;
+    transition: opacity 0.5s ease-in-out;
+    min-height: 200px;
+    animation: popIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Center the YouTube trailer below the recommendations */
+.trailer-modal {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .trailer-content {
+    max-width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
